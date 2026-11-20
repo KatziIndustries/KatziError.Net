@@ -1,0 +1,18 @@
+<Project>
+  <ItemGroup Condition="'$(PublishAot)' == 'true'">
+    <DirectPInvoke Include="kerror" />
+    <NativeLibrary Include="$(MSBuildThisFileDirectory)../native/linux-x64/libkerror.a" />
+    <LinkerArg Include="-lwayland-client" />
+    <LinkerArg Include="-lffi" />
+    <LinkerArg Include="-lX11" />
+    <LinkerArg Include="-lxcb" />
+    <LinkerArg Include="-lXau" />
+    <LinkerArg Include="-lXdmcp" />
+  </ItemGroup>
+  
+  <Target Name="KatziErrorRemoveSoFromPublish" AfterTargets="ComputeResolvedFilesToPublishList" Condition="'$(PublishAot)' == 'true'">
+    <ItemGroup>
+      <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)" Condition="'%(Filename)%(Extension)' == 'libkerror.so'" />
+      </ItemGroup>
+    </Target>
+</Project>

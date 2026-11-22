@@ -13,6 +13,6 @@
   <Target Name="KatziErrorRemoveSoFromPublish" AfterTargets="ComputeResolvedFilesToPublishList" Condition="'$(PublishAot)' == 'true'">
     <ItemGroup>
       <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)" Condition="'%(Filename)%(Extension)' == 'libkerror.so'" />
-      </ItemGroup>
-    </Target>
+    </ItemGroup>
+  </Target>
 </Project>

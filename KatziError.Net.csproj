@@ -26,4 +26,12 @@
     <None Include="README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
   
+  <ItemGroup>
+    <None Include="native/linux-x64/libkerror.so" CopyToOutputDirectory="PreserveNewest" Link="libkerror.so" Visible="false" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Test/**" />
+  </ItemGroup>
+  
 </Project>

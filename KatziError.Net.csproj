@@ -8,12 +8,12 @@
     <IsAotCompatible>true</IsAotCompatible>
     
     <RepositoryType>git</RepositoryType>
-    <ProjectUrl>https://github.com/KatziIndustries/KatziError</ProjectUrl>
-    <RepositoryUrl>https://github.com/KatziIndustries/KatziError.git</RepositoryUrl>
+    <ProjectUrl>https://github.com/KatziIndustries/KatziError.Net</ProjectUrl>
+    <RepositoryUrl>https://github.com/KatziIndustries/KatziError.Net.git</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageId>KatziError.Net</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>AaronoLW</Authors>
     <Description>KatziError C# bindings</Description>
   </PropertyGroup>

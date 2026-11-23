@@ -1,4 +1,4 @@
 # KatziError
 C# bindings for KatziError
 
-[NuGet]("https://www.nuget.org/packages/KatziError.Net")
+Available on [NuGet](https://www.nuget.org/packages/KatziError.Net)

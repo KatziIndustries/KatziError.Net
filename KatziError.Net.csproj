@@ -6,24 +6,27 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsAotCompatible>true</IsAotCompatible>
+  </PropertyGroup>
     
-    <RepositoryType>git</RepositoryType>
-    <ProjectUrl>https://github.com/KatziIndustries/KatziError.Net</ProjectUrl>
+  <PropertyGroup>
+    <Authors>AaronoLW</Authors>
+    <Version>1.0.3</Version>
+    <Description>KatziError C# bindings</Description>
+    <PackageProjectUrl>https://github.com/KatziIndustries/KatziError.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/KatziIndustries/KatziError.Net.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageId>KatziError.Net</PackageId>
-    <Version>1.0.2</Version>
-    <Authors>AaronoLW</Authors>
-    <Description>KatziError C# bindings</Description>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
   
   <ItemGroup>
     <None Include="buildTransitive/KatziError.Net.targets" Pack="true" PackagePath="buildTransitive/" />
     <None Include="native/linux-x64/libkerror.so" Pack="true" PackagePath="runtimes/linux-x64/native/" />
     <None Include="native/linux-x64/libkerror.a"  Pack="true" PackagePath="native/linux-x64/" />
-    
-    <None Include="README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
   
   <ItemGroup>
